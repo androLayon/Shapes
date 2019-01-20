@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="gIV-Tc-Myq">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="115-WU-IRk" customClass="HomeViewController" customModule="HarriTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJd-G3-wpA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQo-bm-WmZ">
+                                <rect key="frame" x="76" y="310" width="222" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Lqj-a4-bKP"/>
+                                    <constraint firstAttribute="width" constant="222" id="wnU-Of-Ns9"/>
+                                </constraints>
+                                <state key="normal" title="logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonClicked:" destination="115-WU-IRk" eventType="touchUpInside" id="Uw9-KT-QtQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Hadeel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfZ-r2-pNI">
+                                <rect key="frame" x="150" y="206" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uQo-bm-WmZ" firstAttribute="leading" secondItem="u2g-UC-ape" secondAttribute="leading" constant="76" id="278-NA-DwD"/>
+                            <constraint firstItem="u2g-UC-ape" firstAttribute="trailing" secondItem="WfZ-r2-pNI" secondAttribute="trailing" constant="150" id="5fJ-3r-tTK"/>
+                            <constraint firstItem="u2g-UC-ape" firstAttribute="bottom" secondItem="uQo-bm-WmZ" secondAttribute="bottom" constant="312" id="C8q-da-3nP"/>
+                            <constraint firstItem="uQo-bm-WmZ" firstAttribute="leading" secondItem="u2g-UC-ape" secondAttribute="leading" constant="76" id="DTC-D2-PUl"/>
+                            <constraint firstItem="WfZ-r2-pNI" firstAttribute="leading" secondItem="u2g-UC-ape" secondAttribute="leading" constant="150" id="Euz-0y-aXf"/>
+                            <constraint firstItem="uQo-bm-WmZ" firstAttribute="top" secondItem="WfZ-r2-pNI" secondAttribute="bottom" constant="83" id="PIB-iX-eUa"/>
+                            <constraint firstItem="u2g-UC-ape" firstAttribute="trailing" secondItem="uQo-bm-WmZ" secondAttribute="trailing" constant="77" id="cJf-dY-d5G"/>
+                            <constraint firstItem="WfZ-r2-pNI" firstAttribute="top" secondItem="u2g-UC-ape" secondAttribute="top" constant="186" id="hDG-mL-G8U"/>
+                            <constraint firstItem="u2g-UC-ape" firstAttribute="trailing" secondItem="uQo-bm-WmZ" secondAttribute="trailing" constant="77" id="qUO-B6-5e6"/>
+                            <constraint firstItem="u2g-UC-ape" firstAttribute="bottom" secondItem="uQo-bm-WmZ" secondAttribute="bottom" constant="312" id="vDZ-2Q-uqL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u2g-UC-ape"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="WfZ-r2-pNI" id="cqX-WQ-8uo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDF-Oi-QAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="-102.09895052473765"/>
+        </scene>
+    </scenes>
+</document>
